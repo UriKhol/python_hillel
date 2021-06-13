@@ -14,16 +14,7 @@ dict.pop(2)
 dict.update({'new_key': 'new_value'})
 print(dict)
 
-# Ответы на вопросы:
-#
-# student["marks"] или student.get("marks")
-#
-# None
-#
-# sample["2"][1] или sample.get("2")[1]
-#
-# не понимаю задания
-#
+
 
 cipher = {}
 alphabet = []
