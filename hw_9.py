@@ -1,20 +1,30 @@
 import random
 
 dict = {
-    1: "Jan",
-    2: "Feb",
-    3: "Mar",
-    4: "Apr",
-    5: "May",
-    6: "Jun"
+    '1': "Jan",
+    '2': "Feb",
+    '3': "Mar",
+    '4': "Apr",
+    '5': "May",
+    '6': "Jun"
 }
 print(dict)
-dict[1], dict[6] = dict[6], dict[1]
-dict.pop(2)
+
+dict[list(dict.keys())[0]], dict[list(dict.keys())[-1]] = dict[list(dict.keys())[-1]], dict[list(dict.keys())[0]]
+dict.pop('2')
 dict.update({'new_key': 'new_value'})
 print(dict)
 
-
+# Ответы на вопросы:
+#
+# student["marks"] или student.get("marks")
+#
+# None
+#
+# sample["2"][1] или sample.get("2")[1]
+#
+# не понимаю задания
+#
 
 cipher = {}
 alphabet = []
