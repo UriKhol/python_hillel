@@ -1,23 +1,18 @@
 import math
 
 print("Задача 1")
-print("Введите первое число")
-a = int(input())
-print("Введите второе число")
-b = int(input())
+a = int(input("Введите первое число\n"))
+b = int(input("Введите второе число\n"))
 print("Нечётное:")
-if a % 2 == 1:
-    print(a)
-else:
+if a % 2 == 0:
     print(b)
+else:
+    print(a)
 
 print("Задача 2")
-print("Введите первое число")
-a = float(input())
-print("Введите второе число")
-b = float(input())
-print("Введите третье число")
-c = float(input())
+a = float(input("Введите первое число\n"))
+b = float(input("Введите второе число\n"))
+c = float(input("Введите третье число\n"))
 print("Среднее:")
 if a < b < c or c < b < a:
     print(b)
@@ -27,20 +22,16 @@ if b < a < c or c < a < b:
     print(a)
 
 print("Задача 3")
-print("Введите x")
-x = float(input())
-print("Введите y")
-y = float(input())
-print("Введите радиус")
-r = float(input())
-if x * x + y * y <= r * r:
+x = float(input("Введите x\n"))
+y = float(input("Введите y\n"))
+r = float(input("Введите радиус\n"))
+if x ** 2 + y ** 2 <= r ** 2:
     print("Точка принадлежит кругу")
 else:
     print("Точка не принадлежит кругу")
 
 print("Задача 4")
-print("Введите x")
-x = float(input())
+x = float(input("Введите x\n"))
 f = 0
 if x > 0:
     f = 2 * x - 10
@@ -51,12 +42,9 @@ if x < 0:
 print(f)
 
 print("Задача 5")
-print("Введите первое число")
-a = int(input())
-print("Введите второе число")
-b = int(input())
-print("Введите третье число")
-c = int(input())
+a = int(input("Введите первое число\n"))
+b = int(input("Введите второе число\n"))
+c = int(input("Введите третье число\n"))
 print("Наибольшее:")
 if a < b:
     if b < c:
@@ -70,12 +58,9 @@ else:
         print(a)
 
 print("Задача 6")
-print("Введите первую сторону")
-a = int(input())
-print("Введите вторую сторону")
-b = int(input())
-print("Введите третью сторону")
-c = int(input())
+a = int(input("Введите первую сторону\n"))
+b = int(input("Введите вторую сторону\n"))
+c = int(input("Введите третью сторону\n"))
 if a < b + c and b < a + c and c < b + a:
     if a == b or b == c or a == c:
         if a == b == c:
@@ -88,26 +73,20 @@ else:
     print("Не треугольник")
 
 print("Задача 7")
-print("Введите x")
-x = float(input())
-print("Введите y")
-y = float(input())
-if x > 0:
-    if y > 0:
-        print("I четверть")
-    else:
-        print("IV четверть")
-else:
-    if y > 0:
-        print("II четверть")
-    else:
-        print("III четверть")
+x = float(input("Введите x\n"))
+y = float(input("Введите y\n"))
+if x >= 0 and y >= 0:
+    print("I четверть")
+if x >= 0 and y < 0:
+    print("IV четверть")
+if x < 0 and y >= 0:
+    print("II четверть")
+if x < 0 and y < 0:
+    print("III четверть")
 
 print("Задача 8")
-print("Введите первое число")
-a = int(input())
-print("Введите второе число")
-b = int(input())
+a = int(input("Введите первое число\n"))
+b = int(input("Введите второе число\n"))
 if a % b == 0:
     print("Делится нацело")
 else:
@@ -115,12 +94,9 @@ else:
 print("Частное:", a // b)
 
 print("Задача 9")
-print("Введите a")
-a = float(input())
-print("Введите b")
-b = float(input())
-print("Введите c")
-c = float(input())
+a = float(input("Введите a\n"))
+b = float(input("Введите b\n"))
+c = float(input("Введите c\n"))
 D = b ** b - 4 * a * c
 if D >= 0:
     print((-b + math.sqrt(D)) / (2 * a))
